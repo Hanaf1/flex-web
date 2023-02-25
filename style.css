@@ -1,0 +1,142 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+/* latihan 1 */
+.container1{
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  background-color:beige;
+  box-sizing: border-box;
+
+}
+
+.sidebar1{
+  order: 1;
+  flex: 1;
+}
+
+.main{
+  padding: 5px;
+  order: 2;
+  flex: 3;
+}
+
+.sidebar2{
+  order: 3;
+  flex: 1;
+}
+
+/* latihan 2 */
+
+.container2{
+  max-width: 800px; 
+  margin: 50px auto;
+}
+
+.square{
+  padding:20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.square.first{
+  background-color: burlywood;
+}
+.square.second{
+  background-color:cornflowerblue;
+}
+.square.third{
+  background-color:hotpink;
+}
+/* latihan 3 */
+
+.container3{
+  width: 800px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail{
+  width: 50%;
+}
+
+.thumbnail img{
+  width: 100%;
+}
+
+/* latihan 4 */
+
+.container4{
+  width: 800px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.card{
+  background-color: #eee;
+  flex: 1;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card .header {
+  height: 150px;
+  background-color: darkgray;
+}
+
+.card .content{
+  text-align: center;
+}
+/* latihan 5 */
+.container5{
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+.kotak{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  color: #eee;
+  margin: auto;
+}
+
+.kotak span{
+  margin: auto;
+}
+
+/* responsive */
+@media(min-width:600px){
+  .container2{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .square{
+    width:30% ;
+  }
+  .thumbnail{
+    width: 25%;
+  }
+  .container4{
+    display: flex;
+  }
+
+}
